@@ -1,74 +1,10 @@
 let postData = [
     {
-        title: "Post 0",
-        blurb: "Lorem ipsum sit dolor amet.",
+        title: "Days 1 & 2 – Honeymoon in Japan – 2019",
+        blurb: "Back in June was our wedding. As one would expect we took off on a honeymoon the next day. About a year before when we were planning the wedding and honeymoon, we stumbled upon some relatively cheap plane tickets to Narita airport outside Tokyo. We both thought a trip to Japan would be amazing, so we jumped at the opportunity and built our trip around the flights. We couldn’t have been happier with the outcome.",
         imagePath: "./img/post-1/jp-honeymoon-1.jpg",
         postURL: "./posts/post-1.html",
-        date: "May 13, 2017",
-        author: "Chris"
-    },
-    {
-        title: "Post 1",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, neque!",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "May 14, 2018",
-        author: "Chris"
-    },
-    {
-        title: "Post 2 - Lorem!",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse nesciunt dolore accusantium quos impedit quidem nobis dolor sunt nostrum?",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "May 15, 2019",
-        author: "Chris"
-    },
-    {
-        title: "Post 2 - Lorem!",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse nesciunt dolore accusantium quos impedit quidem nobis dolor sunt nostrum?",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "May 15, 2020",
-        author: "Chris"
-    },
-    {
-        title: "Post 2 - Lorem!",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse nesciunt dolore accusantium quos impedit quidem nobis dolor sunt nostrum?",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "May 15, 2021",
-        author: "Chris"
-    },
-    {
-        title: "Post 2 - Lorem!",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse nesciunt dolore accusantium quos impedit quidem nobis dolor sunt nostrum?",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "May 15, 2022",
-        author: "Chris"
-    },
-    {
-        title: "Post 2 - Lorem!",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse nesciunt dolore accusantium quos impedit quidem nobis dolor sunt nostrum?",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "June 1, 2019",
-        author: "Chris"
-    },
-    {
-        title: "Post 2 - Lorem!",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse nesciunt dolore accusantium quos impedit quidem nobis dolor sunt nostrum?",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "December 24, 2019",
-        author: "Chris"
-    },
-    {
-        title: "Post 2 - Lorem!",
-        blurb: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse nesciunt dolore accusantium quos impedit quidem nobis dolor sunt nostrum?",
-        imagePath: "./img/post-1/jp-honeymoon-1.jpg",
-        postURL: "./posts/post-1.html",
-        date: "August 18, 2022",
+        date: "May 13, 2020",
         author: "Chris"
     }
 ]
