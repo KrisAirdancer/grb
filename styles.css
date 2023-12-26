@@ -1,0 +1,6 @@
+.box { /* TODO: Delete this style. It is for testing. */
+    background-color: aquamarine;
+    min-height: 50px;
+    border: solid black 2px;
+    border-radius: 4px;
+  }
