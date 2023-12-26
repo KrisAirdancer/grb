@@ -101,5 +101,23 @@ let postData = {
             </div>
             <p>At this point we were getting worn out from walking nearly 10 miles on hard concrete and decided to find a place to eat. I took us a minute to find a place among all of the shops, but we manged. After a quick bowl of ramen, we made our way back to Taito (the city where our Airbnb was) stopping at a grocery store on the way to grab some food for breakfast the next morning.</p>
             `
+    },
+    // Paste this into post-data.js and fill out TODOs
+
+    post_0002: {
+        title: "Test Post: Does the new blog work?",
+        blurb: "This is a test of the new blog. It's not the easiest to blog from, but it is free.",
+        imagePath: "TODO",
+        postURL: "./posts/post-2.html",
+        date: "December 26, 2023",
+        author: "Chris",
+        body: `
+            <p>This is a test of the new blog. It's not the easiest to blog from, but it is free.</p>
+            <div class="mb-2">
+                <img src="../img/post-2/test-image.jpg" class="img-fluid rounded-2 custom-img-border">
+                <span class="image-caption">A test image.</span>
+                <p>Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet.</p>
+            </div>
+        `
     }
 }
