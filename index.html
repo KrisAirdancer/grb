@@ -6,34 +6,59 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
-    <title>Document</title>
+    <title>Golden Ramen Bowl</title>
 </head>
 <body>
     <div class="container mt-3">
-        <div class="row">
-            <div class="col">
-                <h1 class="mb-0">Golden Ramen Bowl</h1>
-                <p class="mt-0">Chris & Vista Marston</p>
-            </div>
-        </div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-dark-subtle rounded mb-4">
+            <div class="container-fluid" id="bootstrap-override">
+                
+                <a class="navbar-brand text-decoration-none fs-3" href="./index.html">Golden Ramen Bowl</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active disabled" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
 
+            </div>
+        </nav>
+
+        <!-- MAIN SECTION -->
         <div class="row gx-3">
+            <!-- POSTS -->
             <div class="col col-8">
-                <!-- <p><a href="./posts/post-1.html">Post 1 - A Bootstrap Test</a></p> -->
-                <div class="card">
+                <div class="card" id="bootstrap-override">
                     <img src="./img/post-1/jp-honeymoon-1.jpg" class="card-img-top" alt="Senso-Ji temple. Tokyo, Japan.">
                     <div class="card-body">
                         <p>
-                            <a href="./posts/post-1.html">Post 1 - A Bootstrap Test</a>
+                            <a href="./posts/post-1.html" class="fs-4">Post 1 - A Bootstrap Test</a>
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus autem ullam ad dolores. Distinctio deserunt cum repudiandae at ea tenetur?
                         </p>
+                        <p class="m-0">
+                            <a href="./posts/post-1.html">Continue reading</a>
+                        </p>
                     </div>
                 </div>
             </div>
+            <!-- SIDEBAR -->
             <div class="col">
-                <div class="box">Hello</div>
+                <img src="./img/site/about-us.jpg" class="img-fluid rounded-2 mb-1 custom-sidebar-img-border" alt="">
+                <div>
+                    We&apos;re Chris & Vista. Two Computer Science students with a love for travel and the great outdoors. After walking 10 miles a day on our honeymoon in Japan and biking the 38-mile Sella Ronda in the Dolomites a month later, we’re itching for our next adventure.
+                </div>
             </div>
         </div>
 
