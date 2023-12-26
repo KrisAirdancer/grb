@@ -2,13 +2,6 @@
   --grb-gold: #BD9000;
 }
 
-.box { /* TODO: Delete this style. It is for testing. */
-    /* background-color: aquamarine; */
-    min-height: 50px;
-    border: solid black 1px;
-    border-radius: 4px;
-  }
-
 #bootstrap-override a {
   color: var(--grb-gold);
 }
@@ -21,17 +14,8 @@
     color: white;
 }
 
-/* .custom-color-grb-gold {
-  color: var(--grb-gold);
-}
-
-.custom-color-black {
-  color: black;
-} */
-
 #bootstrap-override .active {
-  font-weight: bold;
-  color: black;
+  color: rgb(110, 110, 110);
 }
 
 .custom-sidebar-img-border {
