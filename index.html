@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script src="./post-data.js"></script>
+    <script src="./scripts.js" defer></script>
     <title>Golden Ramen Bowl</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container mb-3">
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg rounded">
             <div class="container-fluid ms-0 ps-0" id="bootstrap-override">
@@ -44,20 +46,7 @@
         <div class="row gx-3">
             <!-- POSTS -->
             <div class="col-sm-8">
-                <div class="card" id="bootstrap-override">
-                    <img src="./img/post-1/jp-honeymoon-1.jpg" class="card-img-top" alt="Senso-Ji temple. Tokyo, Japan.">
-                    <div class="card-body">
-                        <p>
-                            <a href="./posts/post-1.html" class="fs-4">Post 1 - A Bootstrap Test</a>
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus autem ullam ad dolores. Distinctio deserunt cum repudiandae at ea tenetur?
-                        </p>
-                        <p class="m-0">
-                            <a href="./posts/post-1.html">Continue reading</a>
-                        </p>
-                    </div>
-                </div>
+                <div id="postsRoot"></div>
             </div>
             <!-- SIDEBAR -->
             <div class="col d-none d-sm-block">
@@ -67,7 +56,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 </html>
