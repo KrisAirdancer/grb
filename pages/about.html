@@ -3,55 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
-    <script src="./post-data.js"></script>
-    <title>Archives</title>
+    <title>About</title>
 </head>
 <body>
     <div class="container mb-3">
+
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg rounded">
             <div class="container-fluid ms-0 ps-0" id="bootstrap-override">
                 
-                <a class="navbar-brand text-decoration-none fs-3" href="./index.html">Golden Ramen Bowl</a>
+                <a class="navbar-brand text-decoration-none fs-3" href="../index.html">Golden Ramen Bowl</a>
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Home</a>
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active disabled" aria-current="page" href="./archives.html">Archives</a>
+                            <a class="nav-link" href="./archives.html">Archives</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
+                            <a class="nav-link active disabled" aria-current="page" href="./pages/about.html">About</a>
                         </li>
                     </ul>
                 </div>
 
             </div>
         </nav>
-
+                
         <!-- MAIN SECTION -->
         <div class="row gx-3">
-            <!-- POSTS -->
+            <!-- MAIN CONTENT -->
             <div class="col-sm-8" id="bootstrap-override">
-                <h4>Archives</h4>
-                <p>All of our posts from the beginning of time! Well, just since the beginning of the blog. But you get the idea.</p>
-                <div id="archivesRoot"></div>
+                <h4>About</h4>
+                <img src="../img/site/about-us.jpg" class="img-fluid rounded-2 mb-2 custom-img-border">
+                <div>
+                    We&apos;re Chris & Vista. Two Computer Science students with a love for travel and the great outdoors. After walking 10 miles a day on our honeymoon in Japan and biking the 38-mile Sella Ronda in the Dolomites a month later, we’re itching for our next adventure.
+                </div>
             </div>
             <!-- SIDEBAR -->
             <div class="col d-none d-sm-block">
-                <img src="./img/site/about-us.jpg" class="img-fluid rounded-2 mb-1 custom-img-border">
+                <img src="../img/site/about-us.jpg" class="img-fluid rounded-2 mb-1 custom-img-border">
                 <div>
                     We&apos;re Chris & Vista. Two Computer Science students with a love for travel and the great outdoors. After walking 10 miles a day on our honeymoon in Japan and biking the 38-mile Sella Ronda in the Dolomites a month later, we’re itching for our next adventure.
                 </div>
@@ -61,36 +63,3 @@
     </div>
 </body>
 </html>
-<script>
-    function generateArchive()
-    {
-        let archiveHTML = ""
-
-        postData.sort((a, b) => {
-            let a_date = new Date(a.date)
-            let b_date = new Date(b.date)
-            return b_date.getTime() - a_date.getTime()
-        })
-
-        let currentYear = (new Date(postData[0].date)).getFullYear()
-        archiveHTML += `<h5>${currentYear}</h5>`
-        for (let i = 0; i < postData.length; i++)
-        {
-            let post = postData[i]
-            let date = new Date(post.date)
-            let year = date.getFullYear()
-
-            if (year !== currentYear)
-            {
-                archiveHTML += `<h5>${year}</h5>`
-                currentYear = year
-            }
-
-            archiveHTML += `<p>&gt; <a href="${post.postURL}">${post.title}</a> <span class="archive-post-date">(${post.date})</span></p>`
-        }
-
-        return archiveHTML
-    }
-    
-    document.getElementById('archivesRoot').innerHTML = generateArchive()
-</script>
